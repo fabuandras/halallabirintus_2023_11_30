@@ -8,12 +8,12 @@ package halallabirintus;
  *
  * @author FabuAndrásNorbert(SZ
  */
-public class Halallabirintus extends javax.swing.JFrame {
+public class halallabirintus extends javax.swing.JFrame {
 
     /**
      * Creates new form halallabirintus
      */
-    public Halallabirintus() {
+    public halallabirintus() {
         initComponents();
     }
 
@@ -26,21 +26,41 @@ public class Halallabirintus extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        tpaneJatek = new javax.swing.JTabbedPane();
+        jpnKezdolap = new javax.swing.JPanel();
+        lblKep = new javax.swing.JLabel();
+        btnJatekGomb = new javax.swing.JButton();
+        pnlFerfi = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        pnlNoi = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        pnlKepessegek = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        jpnElsooldal = new javax.swing.JPanel();
+        lblKep2 = new javax.swing.JLabel();
+        pnlSzoveg1 = new javax.swing.JPanel();
+        jscpSzoveg1 = new javax.swing.JScrollPane();
+        txtpSzoveg1 = new javax.swing.JTextPane();
+        btn270oldal = new javax.swing.JButton();
+        btn66oldal = new javax.swing.JButton();
+        lblLada = new javax.swing.JLabel();
+        lblLada2 = new javax.swing.JLabel();
+        jpnMasodikoldal = new javax.swing.JPanel();
+        lblKep3 = new javax.swing.JLabel();
+        pnlSzoveg2 = new javax.swing.JPanel();
+        jscpSzoveg2 = new javax.swing.JScrollPane();
+        txtpSzoveg2 = new javax.swing.JTextPane();
+        btn215oldal = new javax.swing.JButton();
+        btn373oldal = new javax.swing.JButton();
+        lblLada3 = new javax.swing.JLabel();
+        lblLada4 = new javax.swing.JLabel();
+        mbMenu = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -51,76 +71,83 @@ public class Halallabirintus extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jTabbedPane1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        tpaneJatek.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jpnKezdolap.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\NetBeansProjects\\320Magas\\menű 1.png")); // NOI18N
-        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        lblKep.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\NetBeansProjects\\320Magas\\menű 1.png")); // NOI18N
+        lblKep.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton1.setText("Új Játék");
+        btnJatekGomb.setText("Új Játék");
+        btnJatekGomb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJatekGombActionPerformed(evt);
+            }
+        });
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Féfi", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
+        pnlFerfi.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Féfi", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
 
         jButton3.setText("Választ");
+        buttonGroup1.add(jButton3);
 
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\NetBeansProjects\\320Magas\\ferfi.jpg")); // NOI18N
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlFerfiLayout = new javax.swing.GroupLayout(pnlFerfi);
+        pnlFerfi.setLayout(pnlFerfiLayout);
+        pnlFerfiLayout.setHorizontalGroup(
+            pnlFerfiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFerfiLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(pnlFerfiLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+        pnlFerfiLayout.setVerticalGroup(
+            pnlFerfiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFerfiLayout.createSequentialGroup()
                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton3)
                 .addContainerGap())
         );
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Női", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
+        pnlNoi.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Női", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
 
         jButton2.setText("Választ");
+        buttonGroup1.add(jButton2);
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\NetBeansProjects\\320Magas\\noi.jpg")); // NOI18N
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlNoiLayout = new javax.swing.GroupLayout(pnlNoi);
+        pnlNoi.setLayout(pnlNoiLayout);
+        pnlNoiLayout.setHorizontalGroup(
+            pnlNoiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlNoiLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlNoiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
+                    .addGroup(pnlNoiLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jLabel2)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        pnlNoiLayout.setVerticalGroup(
+            pnlNoiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlNoiLayout.createSequentialGroup()
                 .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
                 .addContainerGap())
         );
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Képességek", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
+        pnlKepessegek.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Képességek", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel4.setText("Ügyesség: 0 [szint]");
+        jLabel4.setText("Ügyesség: 0. [szint]");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel6.setText("Szerencse: 0 [db]");
@@ -128,21 +155,21 @@ public class Halallabirintus extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setText("Életerő: 3 [élet]");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlKepessegekLayout = new javax.swing.GroupLayout(pnlKepessegek);
+        pnlKepessegek.setLayout(pnlKepessegekLayout);
+        pnlKepessegekLayout.setHorizontalGroup(
+            pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlKepessegekLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        pnlKepessegekLayout.setVerticalGroup(
+            pnlKepessegekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlKepessegekLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
@@ -152,44 +179,191 @@ public class Halallabirintus extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout jpnKezdolapLayout = new javax.swing.GroupLayout(jpnKezdolap);
+        jpnKezdolap.setLayout(jpnKezdolapLayout);
+        jpnKezdolapLayout.setHorizontalGroup(
+            jpnKezdolapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnKezdolapLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(jpnKezdolapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnJatekGomb, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblKep, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addGroup(jpnKezdolapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jpnKezdolapLayout.createSequentialGroup()
+                        .addComponent(pnlNoi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pnlFerfi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pnlKepessegek, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+        jpnKezdolapLayout.setVerticalGroup(
+            jpnKezdolapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnKezdolapLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jpnKezdolapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpnKezdolapLayout.createSequentialGroup()
+                        .addComponent(lblKep)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnJatekGomb, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
+                    .addGroup(jpnKezdolapLayout.createSequentialGroup()
+                        .addGroup(jpnKezdolapLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pnlFerfi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pnlNoi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pnlKepessegek, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
 
-        jTabbedPane1.addTab("Home", jPanel1);
+        tpaneJatek.addTab("Kezdőoldal", jpnKezdolap);
+
+        lblKep2.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\halallabirintus_2023_11_30\\kepek\\1. oldal.png")); // NOI18N
+
+        pnlSzoveg1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        txtpSzoveg1.setContentType("text/html"); // NOI18N
+        txtpSzoveg1.setText("<html>\r\n  <head>\r\n\r\n  </head>\r\n  <body>\r\n    <p style=\"margin-top: 0\">\r\n      \rMiután öt percet haladtál lassan az alagútban,<br>\negy kőasztalhoz érsz,<br>\namely a bal oldali fal mellett áll.<br>\nHat doboz van rajta,<br>\negyikükre a te neved festették.<br>\nHa kiakarod nyitni a dobozt,<br>\nlapozz a 270-re.<br>\nHa inkább tovább haladsz észak felé,<br>\nlapozz a 66-ra.\n    </p>\r\n  </body>\r\n</html>\r\n");
+        jscpSzoveg1.setViewportView(txtpSzoveg1);
+
+        btn270oldal.setText("270. oldal");
+        buttonGroup2.add(btn270oldal);
+
+        btn66oldal.setText("66. oldal");
+        buttonGroup2.add(btn66oldal);
+
+        lblLada.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\halallabirintus_2023_11_30\\kepek\\1864535_stock-photo-treasure-chest.jpg")); // NOI18N
+
+        lblLada2.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\halallabirintus_2023_11_30\\kepek\\1864535_stock-photo-treasure-chest.jpg")); // NOI18N
+
+        javax.swing.GroupLayout pnlSzoveg1Layout = new javax.swing.GroupLayout(pnlSzoveg1);
+        pnlSzoveg1.setLayout(pnlSzoveg1Layout);
+        pnlSzoveg1Layout.setHorizontalGroup(
+            pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlSzoveg1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jscpSzoveg1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(pnlSzoveg1Layout.createSequentialGroup()
+                        .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(lblLada, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
+                            .addComponent(btn66oldal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btn270oldal, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
+                            .addComponent(lblLada2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
+        );
+        pnlSzoveg1Layout.setVerticalGroup(
+            pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlSzoveg1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jscpSzoveg1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblLada, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblLada2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
+                .addGroup(pnlSzoveg1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn66oldal)
+                    .addComponent(btn270oldal))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jpnElsooldalLayout = new javax.swing.GroupLayout(jpnElsooldal);
+        jpnElsooldal.setLayout(jpnElsooldalLayout);
+        jpnElsooldalLayout.setHorizontalGroup(
+            jpnElsooldalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnElsooldalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblKep2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlSzoveg1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jpnElsooldalLayout.setVerticalGroup(
+            jpnElsooldalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnElsooldalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jpnElsooldalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnlSzoveg1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblKep2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        tpaneJatek.addTab("1. oldal", jpnElsooldal);
+
+        lblKep3.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\halallabirintus_2023_11_30\\kepek\\56. oldal.png")); // NOI18N
+
+        pnlSzoveg2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        txtpSzoveg2.setContentType("text/html"); // NOI18N
+        txtpSzoveg2.setText("<html>\r\n  <head>\r\n\r\n  </head>\r\n  <body>\r\n    <p style=\"margin-top: 0\">\r\n      \rLátod, hogy az akadály egy széles,<br>\nbarna, sziklaszerű tárgy.<br>\nMegérinted, és meglepve tapasztalod,<br>\nhogy lágy, szivacsszerű.<br>\nHa át szeretnél mászni rajta, lapozz a 373-ra.<br>\nHa ketté akarod vágni a kardoddal,<br>\nlapozz a 215-re.\n    </p>\r\n  </body>\r\n</html>\r\n");
+        jscpSzoveg2.setViewportView(txtpSzoveg2);
+
+        btn215oldal.setText("215. oldal");
+
+        btn373oldal.setText("373. oldal");
+
+        lblLada3.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\halallabirintus_2023_11_30\\kepek\\1864535_stock-photo-treasure-chest.jpg")); // NOI18N
+
+        lblLada4.setIcon(new javax.swing.ImageIcon("C:\\Users\\FabuAndrásNorbert(SZ\\Documents\\halallabirintus_2023_11_30\\kepek\\1864535_stock-photo-treasure-chest.jpg")); // NOI18N
+
+        javax.swing.GroupLayout pnlSzoveg2Layout = new javax.swing.GroupLayout(pnlSzoveg2);
+        pnlSzoveg2.setLayout(pnlSzoveg2Layout);
+        pnlSzoveg2Layout.setHorizontalGroup(
+            pnlSzoveg2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlSzoveg2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlSzoveg2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jscpSzoveg2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(pnlSzoveg2Layout.createSequentialGroup()
+                        .addGroup(pnlSzoveg2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(lblLada3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
+                            .addComponent(btn215oldal, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                        .addGroup(pnlSzoveg2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btn373oldal, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
+                            .addComponent(lblLada4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
+        );
+        pnlSzoveg2Layout.setVerticalGroup(
+            pnlSzoveg2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlSzoveg2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jscpSzoveg2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlSzoveg2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblLada3)
+                    .addComponent(lblLada4))
+                .addGap(18, 18, 18)
+                .addGroup(pnlSzoveg2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn215oldal)
+                    .addComponent(btn373oldal))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jpnMasodikoldalLayout = new javax.swing.GroupLayout(jpnMasodikoldal);
+        jpnMasodikoldal.setLayout(jpnMasodikoldalLayout);
+        jpnMasodikoldalLayout.setHorizontalGroup(
+            jpnMasodikoldalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnMasodikoldalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblKep3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pnlSzoveg2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jpnMasodikoldalLayout.setVerticalGroup(
+            jpnMasodikoldalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpnMasodikoldalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jpnMasodikoldalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(pnlSzoveg2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblKep3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
+        );
+
+        tpaneJatek.addTab("56. oldal", jpnMasodikoldal);
 
         jMenu1.setText("Beállítások");
 
@@ -203,31 +377,36 @@ public class Halallabirintus extends javax.swing.JFrame {
         jMenuItem3.setText("Mentés");
         jMenu1.add(jMenuItem3);
 
-        jMenuBar1.add(jMenu1);
+        mbMenu.add(jMenu1);
 
         jMenu2.setText(".....");
-        jMenuBar1.add(jMenu2);
+        mbMenu.add(jMenu2);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(mbMenu);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap()
+                .addComponent(tpaneJatek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tpaneJatek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnJatekGombActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJatekGombActionPerformed
+        tpaneJatek.setSelectedIndex(1 );
+    }//GEN-LAST:event_btnJatekGombActionPerformed
 
     /**
      * @param args the command line arguments
@@ -256,20 +435,27 @@ public class Halallabirintus extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Halallabirintus().setVisible(true);
+                new halallabirintus().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn215oldal;
+    private javax.swing.JButton btn270oldal;
+    private javax.swing.JButton btn373oldal;
+    private javax.swing.JButton btn66oldal;
+    private javax.swing.JButton btnJatekGomb;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -277,15 +463,30 @@ public class Halallabirintus extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JPanel jpnElsooldal;
+    private javax.swing.JPanel jpnKezdolap;
+    private javax.swing.JPanel jpnMasodikoldal;
+    private javax.swing.JScrollPane jscpSzoveg1;
+    private javax.swing.JScrollPane jscpSzoveg2;
+    private javax.swing.JLabel lblKep;
+    private javax.swing.JLabel lblKep2;
+    private javax.swing.JLabel lblKep3;
+    private javax.swing.JLabel lblLada;
+    private javax.swing.JLabel lblLada2;
+    private javax.swing.JLabel lblLada3;
+    private javax.swing.JLabel lblLada4;
+    private javax.swing.JMenuBar mbMenu;
+    private javax.swing.JPanel pnlFerfi;
+    private javax.swing.JPanel pnlKepessegek;
+    private javax.swing.JPanel pnlNoi;
+    private javax.swing.JPanel pnlSzoveg1;
+    private javax.swing.JPanel pnlSzoveg2;
+    private javax.swing.JTabbedPane tpaneJatek;
+    private javax.swing.JTextPane txtpSzoveg1;
+    private javax.swing.JTextPane txtpSzoveg2;
     // End of variables declaration//GEN-END:variables
 }
